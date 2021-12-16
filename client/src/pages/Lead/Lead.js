@@ -11,10 +11,10 @@ const Lead = () => {
 
   const onSubmit = (event) => {
     event.preventDefault();
-    console.log(leadId);
     axios
       .get(`/api/appr4leads?id=${leadId}`)
-      .then((response) => console.log(response));
+      .then((response) => console.log("response from server ===>", response))
+      .catch((err) => console.log("err ===>", err));
   };
 
   return (

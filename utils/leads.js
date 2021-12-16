@@ -1,9 +1,9 @@
 const leads = {
   "Thomas Smith": "L52%ghpGJTpC3%",
-  "Alex Gutierrez": "#^rAe6d4Vzwd7U",
+  "Alex Gutierrez": "rAe6d4Vzwd7U",
   "Alexa Vanhooser": "d^iLDNs#GtmU42",
   "Kendrick Mausolf": "VZDy2m5$PHoybC",
-  "Luis Reyes": "!#6jDiunxiSJn2",
+  "Luis Reyes": "6jDiunxiSJn2",
   "Victor Carranza/Miranda Ragland": "9X5^YDJfg%ZKUz",
   "Andy DeSanctis": "e#4EVC!#2wZE^L",
   "Arturo Ceballos/Vanessa Ceballos": "x7fN$fiHs3aX4@",
