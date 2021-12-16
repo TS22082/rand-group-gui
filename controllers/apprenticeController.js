@@ -46,6 +46,7 @@ module.exports = {
   },
 
   getApprenticesForLead: async (req, res) => {
+    console.log(req.query);
     res.json({ msg: "success" });
   },
 };
