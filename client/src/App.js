@@ -8,6 +8,7 @@ import AddApprentice from "./pages/AddApprentice/AddApprentice";
 
 import axios from "axios";
 import CheckGroups from "./pages/CheckGroups/CheckGroups";
+import Lead from "./pages/Lead/Lead"
 
 function App() {
   const [leads, setLeads] = useState([]);
@@ -49,6 +50,7 @@ function App() {
             }
           />
           <Route path="/addapprentice" element={<AddApprentice />} />
+          <Route path="/lead/:id" element={<Lead />} />
         </Routes>
       </Router>
     </>
