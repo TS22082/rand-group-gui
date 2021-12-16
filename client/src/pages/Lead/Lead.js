@@ -9,12 +9,25 @@ const Lead = () => {
     axios.get("/api/appr4leads").then((res) => console.log("result ===>", res));
   }, []);
 
+  const onSubmit = (event) => {
+    event.preventDefault();
+    console.log(leadId);
+    axios
+      .get(`/api/appr4leads?id=${leadId}`)
+      .then((response) => console.log(response));
+  };
+
   return (
     <div className="lead-form-container">
-      <form>
-        <input type="text" />
+      <form onSubmit={onSubmit}>
+        <input
+          onChange={(event) => {
+            setLeadId(event.target.value);
+          }}
+          type="text"
+        />
+        <button type="submit">Check</button>
       </form>
-      <button>Check</button>
     </div>
   );
 };
