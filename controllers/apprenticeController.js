@@ -44,4 +44,8 @@ module.exports = {
         res.json(makeGroups(allLeadsApprentices, req.body));
     });
   },
+
+  getApprenticesForLead: async (req, res) => {
+    res.json({ msg: "success" });
+  },
 };
