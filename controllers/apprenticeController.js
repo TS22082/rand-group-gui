@@ -46,7 +46,15 @@ module.exports = {
   },
 
   getApprenticesForLead: async (req, res) => {
-    console.log(req.query);
-    res.json({ msg: "success" });
+    const leadId = req.query.id;
+    console.log("Lead ID ===>", leadId);
+
+    try {
+      const apprenticesForLead = await Apprentice.find({ leadID: leadId });
+      console.log("apprentices for this lead ===>", apprenticesForLead);
+      res.json(apprenticesForLead);
+    } catch (err) {
+      res.status(404).json({ msg: err });
+    }
   },
 };
